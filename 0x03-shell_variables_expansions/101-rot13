@@ -1,2 +1,5 @@
 #!/bin/bash
-echo "$1" | tr '[a-z]' '[n-za-m]' | tr '[A-Z]' '[N-ZA-M]'
+IFS= read -r first_line
+IFS= read -r second_line
+echo "$second_line" | tr 'a-zA-Z' 'n-za-mN-ZA-M'
+
