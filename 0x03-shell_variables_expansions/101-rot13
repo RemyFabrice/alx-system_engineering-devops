@@ -1,5 +1,3 @@
 #!/bin/bash
-IFS= read -r first_line
-IFS= read -r second_line
-echo "$second_line" | tr 'a-zA-Z' 'n-za-mN-ZA-M'
+IFS= read -r first_line IFS= read -r second_line echo "$second_line" | tr 'a-zA-Z' 'n-za-mN-ZA-M'
 
